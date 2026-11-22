@@ -6,9 +6,12 @@ from aiogram.filters import Command
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.keyboard import InlineKeyboardBuilder
+import os
+TOKEN = os.getenv("BOT_TOKEN")
+
 
 # --- НАСТРОЙКИ ---
-BOT_TOKEN = "7277325489:AAFvxDCXSaugUSYQTsuiC41j4zNyynN31dA"
+# BOT_TOKEN = "7277325489:AAFvxDCXSaugUSYQTsuiC41j4zNyynN31dA"
 DATA_FILE = "data.json"
 RATE = 1                # 1 балл = 1 рубль
 BASE_HABIT = 25          # стартовая награда за привычку: 25 ₽
